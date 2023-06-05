@@ -1,0 +1,45 @@
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  thymeleaf:
+    enabled: false #타임리프 끄기  
+
+      
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver #사용 드라이버  
+    url: jdbc:mysql://localhost:3306/blog?serverTimezone=Asia/Seoul #사용 스케마 이름 및 포트, 시간대 설
+    username: root
+    password: root
+    
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: update  #create면 기존 동일 이름 테이블 삭제 후 생성, update면 수정 
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl #이 전략 사용 시 기본 설정한 이름 사용 my_email -> myEmail  
+      use-new-id-generator-mappings: false #jpa의 기본 넘버링 사용x - 내가 설정한 것 사
+    #show-sql: true - 주석 해제하면 sql의 테이블 이름을콘솔창에서 보여줌  
+    properties:
+      hibernate.format_sql: true #보여지는 콘솔창에 깔끔히 정렬  
+
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+      
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+root:
+  key: root
