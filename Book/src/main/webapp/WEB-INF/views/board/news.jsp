@@ -133,16 +133,16 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="/image/logos/microsoft.svg" alt="..." /></a>
+                        <a href="https://www.yes24.com/Main/default.aspx?pid=123487&cosemkid=go14913770429293498&gclid=CjwKCAjwsvujBhAXEiwA_UXnALHt0WYMlDvRyu0-0-40rSFIpmKsHzwNs5LgBxGBnyCMr2VN-pXotBoCWqEQAvD_BwE"><img class="img-fluid img-brand d-block mx-auto" src="/image/logos/yes.svg" alt="..." /></a>
                     </div>
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="/image/logos/google.svg" alt="..." /></a>
+                        <a href="https://books.google.co.kr/"><img class="img-fluid img-brand d-block mx-auto" src="/image/logos/google.svg" alt="..." /></a>
                     </div>
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="/image/logos/facebook.svg" alt="..." /></a>
+                        <a href="https://www.aladin.co.kr/home/welcome.aspx"><img class="img-fluid img-brand d-block mx-auto" src="/image/logos/aladin.svg" alt="..." /></a>
                     </div>
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="/image/logos/ibm.svg" alt="..." /></a>
+                        <a href="https://www.ypbooks.co.kr/kor_index.yp"><img class="img-fluid img-brand d-block mx-auto" src="/image/logos/yp.svg" alt="..." /></a>
                     </div>
                 </div>
             </div>

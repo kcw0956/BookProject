@@ -46,12 +46,14 @@
             <hr class="my-4" />
             <!-- Post preview 2 -->
             <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.</h2>
+                <a href="board/post2">
+                    <h2 class="post-title">6월 베스트 셀러</h2>
+                    <h3 class="post-subtitle">6월의 베스트 셀러를 확인해 보세요.  </h3>
+
                 </a>
                 <p class="post-meta">
                     Posted by
-                    <a href="#!">Start Bootstrap</a>
+                    <a href="#!">Admin</a>
                     on September 18, 2023
                 </p>
             </div>
@@ -61,13 +63,13 @@
         <div class="col-md-6">
             <!-- Post preview 3 -->
             <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">Science has not yet mastered prophecy</h2>
-                    <h3 class="post-subtitle">We predict too much for the next year and yet far too little for the next ten.</h3>
+                <a href="board/post3">
+                    <h2 class="post-title">필독 리스트 </h2>
+                    <h3 class="post-subtitle">세계의 필독 책 리스트 </h3>
                 </a>
                 <p class="post-meta">
                     Posted by
-                    <a href="#!">Start Bootstrap</a>
+                    <a href="#!">Admin</a>
                     on August 24, 2023
                 </p>
             </div>
@@ -75,13 +77,13 @@
             <hr class="my-4" />
             <!-- Post preview 4 -->
             <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">Failure is not an option</h2>
-                    <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
+                <a href="board/post4">
+                    <h2 class="post-title">6월 우수 회원 </h2>
+                    <h3 class="post-subtitle">이번 달 우수 회원입니다.</h3>
                 </a>
                 <p class="post-meta">
                     Posted by
-                    <a href="#!">Start Bootstrap</a>
+                    <a href="#!">Admin</a>
                     on July 8, 2023
                 </p>
             </div>

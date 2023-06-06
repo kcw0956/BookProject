@@ -31,28 +31,23 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                        <a href="https://interesting-albatross-940.notion.site/851bf48015184d42b3d939a0fd0b27eb?pvs=4">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-sticky-note fa-stack-2x" style="color: #d9cafe;"></i>
+                            </span>
+                        </a>
+                    </li>
                             <li class="list-inline-item">
-                                <a href="#!">
+                                <a href="https://computer.du.ac.kr/computer/Main.do">
                                     <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                    </span>
+                                    <i class="fa-solid fa-school fa-2xl" style="color: #004d65;"></i>                                    </span>
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="https://github.com/kcw0956/BookProject">
                                     <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
+                                    <i class="fa-brands fa-square-github fa-2xl"></i>                                    </span>
                                 </a>
                             </li>
                         </ul>

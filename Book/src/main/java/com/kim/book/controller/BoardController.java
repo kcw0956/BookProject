@@ -56,4 +56,15 @@ public class BoardController {
 		return "board/post";
 	}
 	
+	@GetMapping("/board/post2")
+	public String post2(Model model, @PageableDefault(size=3, sort="id", direction = Sort.Direction.DESC) Pageable pageable) {  
+		model.addAttribute("boards", boardService.글목록(pageable));
+		return "board/post2";
+	}
+	
+	@GetMapping("/board/post3")
+	public String post3(Model model, @PageableDefault(size=3, sort="id", direction = Sort.Direction.DESC) Pageable pageable) {  
+		model.addAttribute("boards", boardService.글목록(pageable));
+		return "board/post3";
+	}
 }
