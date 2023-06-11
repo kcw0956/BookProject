@@ -43,10 +43,10 @@ public class User {
 
 	// @ColumnDefault("user")
 	// DB는 RoleType이라는 게 없다.
-	@Enumerated(EnumType.STRING)
+	@Enumerated(EnumType.STRING) //RoleType: Enum변수만 사용하도록 강제, EnumType.STRING: 테이블에서 RoleType을 인식 못하니 문자열이라고 정의 
 	private RoleType role; // Enum을 쓰는게 좋다. // ADMIN, USER
 	
-	private String oauth; // kakao, google
+	private String oauth; // kakao, user 구분 
 	
 	// 내가 직접 시간을 넣으려면 Timestamp.valueOf(LocalDateTime.now())
 	@CreationTimestamp

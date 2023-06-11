@@ -16,7 +16,7 @@ import com.kim.book.config.auth.PrincipalDetailService;
 // 빈 등록 : 스프링 컨테이너에서 객체를 관리할 수 있게 하는 것
 
 @Configuration // 빈등록 (IoC관리)
-@EnableWebSecurity // 시큐리티 필터가 등록이 된다.
+@EnableWebSecurity // 시큐리티 필터가 등록이 된다. - 접근을 걸러준다 
 //Controller에서 특정 권한이 있는 유저만 접근을 허용하려면 @PreAuthorize 어노테이션을 사용하는데, 해당 어노테이션을 활성화 시키는 어노테이션이다.
 @EnableGlobalMethodSecurity(prePostEnabled = true) 
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
@@ -30,7 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 		return super.authenticationManagerBean();
 	}
 
-	@Bean // IoC가 되요!!
+	@Bean // IoC
 	public BCryptPasswordEncoder encodePWD() {
 		return new BCryptPasswordEncoder();
 	}
@@ -46,15 +46,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http
-			.csrf().disable()  // csrf 토큰 비활성화 (테스트시 걸어두는 게 좋음)
-			.authorizeRequests()
-				.antMatchers("/", "/auth/**", "/js/**", "/css/**", "/image/**", "/dummy/**") 
-				.permitAll()
-				.anyRequest()
-				.authenticated()
+			.csrf().disable()  // csrf 토큰 비활성화 
+			.authorizeRequests()//요청이 들어오면 
+				.antMatchers("/", "/auth/**", "/js/**", "/css/**", "/image/**", "/dummy/**") //경로 
+				.permitAll()//위의 경로는 누구나 들어올 수 있다 
+				.anyRequest()// 이게 아닌 다른 모든 요청은 
+				.authenticated()// 인증이 되야 한다 
 			.and()
 				.formLogin()
-				.loginPage("/auth/loginForm")
+				.loginPage("/auth/loginForm") //인증이 필요한 주소로 이동 
 				.loginProcessingUrl("/auth/loginProc")
 				.defaultSuccessUrl("/"); // 스프링 시큐리티가 해당 주소로 요청오는 로그인을 가로채서 대신 로그인 해준다.
 	}

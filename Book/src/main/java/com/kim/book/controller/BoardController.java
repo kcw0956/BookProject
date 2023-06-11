@@ -45,26 +45,30 @@ public class BoardController {
 	}
 
 	@GetMapping("/board/list")
-	public String list(Model model, @PageableDefault(size=3, sort="id", direction = Sort.Direction.DESC) Pageable pageable) {  
+	public String list(Model model, @PageableDefault(size=7, sort="id", direction = Sort.Direction.DESC) Pageable pageable) {  
 		model.addAttribute("boards", boardService.글목록(pageable));
 		return "board/list";
 	}
 	
 	@GetMapping("/board/post")
-	public String post(Model model, @PageableDefault(size=3, sort="id", direction = Sort.Direction.DESC) Pageable pageable) {  
-		model.addAttribute("boards", boardService.글목록(pageable));
+	public String post() {  
 		return "board/post";
 	}
 	
 	@GetMapping("/board/post2")
-	public String post2(Model model, @PageableDefault(size=3, sort="id", direction = Sort.Direction.DESC) Pageable pageable) {  
-		model.addAttribute("boards", boardService.글목록(pageable));
+	public String post2() {  
 		return "board/post2";
 	}
 	
 	@GetMapping("/board/post3")
-	public String post3(Model model, @PageableDefault(size=3, sort="id", direction = Sort.Direction.DESC) Pageable pageable) {  
-		model.addAttribute("boards", boardService.글목록(pageable));
+	public String post3() {
 		return "board/post3";
 	}
+	
+	@GetMapping("/board/post4")
+	public String post4() {
+		return "board/post4";
+	}
+	
+	
 }

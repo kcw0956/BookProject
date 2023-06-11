@@ -2,9 +2,10 @@ package com.kim.book.model;
 
 import lombok.Data;
 
+
 @Data
 public class KakaoProfile {
-	public Integer id;
+	public long id;
 	public String connected_at;
 	public Properties properties;
 	public KakaoAccount kakao_account;
@@ -25,12 +26,16 @@ public class KakaoProfile {
 		public Boolean is_email_valid;
 		public Boolean is_email_verified;
 		public String email;
+		public boolean profile_nickname_needs_agreement;
+		public boolean profile_image_needs_agreement;
+
 
 		@Data
 		public class Profile {
 			public String nickname;
 			public String thumbnail_image_url;
 			public String profile_image_url;
+			public boolean is_default_image;
 		}
 	}
 }

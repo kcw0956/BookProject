@@ -55,4 +55,8 @@ public class Board {
 	
 	@CreationTimestamp
 	private LocalDateTime createDate;
+	
+	@Column(columnDefinition = "integer default 0", nullable = false)	// 조회수의 기본 값을 0으로 지정, null 불가 처리
+	private int view;
 }
+

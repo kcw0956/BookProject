@@ -1,5 +1,7 @@
 package com.kim.book.service;
 
+import java.time.format.DateTimeFormatter;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -30,7 +32,7 @@ public class BoardService {
 		board.setCount(0);
 		board.setUser(user);
 		boardRepository.save(board);
-	}
+		}
 	
 	@Transactional(readOnly = true)
 	public Page<Board> 글목록(Pageable pageable){
@@ -71,5 +73,8 @@ public class BoardService {
 	@Transactional
 	public void 댓글삭제(int replyId) {
 		replyRepository.deleteById(replyId);
+		
 	}
+	
+
 }
